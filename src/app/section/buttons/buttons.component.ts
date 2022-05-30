@@ -10,8 +10,8 @@ export class ButtonsComponent implements OnInit {
 
   constructor() {}
 
-  start() {
-    this.clickEvent.emit('change!');
+  exectueButton(command: string) {
+    this.clickEvent.emit(command);
   }
 
   ngOnInit(): void {}
